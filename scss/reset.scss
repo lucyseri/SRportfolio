@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+$title-font: "Roboto Condensed", sans-serif;
+$body-font: "Noto Sans KR", sans-serif;
+$back0-color: #f8f8f7;
+$back1-color: #FEFEFD;
+$back2-color: #fff;
+$txt0-color: #2B2A27;
+$txt1-color: #5F5D57;
+$txt2-color: #A6A39B;
+$border0-color: #D7D3C8;
+$border1-color:  #E7E3D8;
+$border2-color: #F1EEE5;
+$main-color: #F6DF66;
+@mixin img-clear{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $txt0-color;
+  font-family: $body-font;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
+ul, li{
+  list-style: none;
+}

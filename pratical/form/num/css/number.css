@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url("../../../../css/reset.css");
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
+#wrap section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 244, 235);
+}
+#wrap section .cutom-num{
+  width: 52px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+}
+#wrap section .cutom-num input{
+  font-size: 24px;
+  text-align: center;
+  background: none;
+  border: none;
+}
+#wrap section .cutom-num input:focus{
+  outline: none;
+}
+#wrap section .cutom-num input::-webkit-outer-spin-button,
+#wrap section .cutom-num input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+#wrap section .cutom-num span.num-btn i{
+  font-size: 32px;
+  color: #333;
+  cursor: pointer;
+}

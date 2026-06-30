@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Gallery by jQuery</title>
+  <!-- jquery -->
+  <script src="../../../js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq_slideGallery.js" defer></script>
+  <!-- style -->
+  <link rel="stylesheet" href="css/jq_slideGallery.css">
+</head>
+<body>
+  <div id="wrap">
+    <section>
+      <div class="container">
+        <ul class="gallery">
+          <li class="slide"><img src="img/furniture0.png" alt="furniture"></li>
+          <li class="slide"><img src="img/furniture1.png" alt="furniture"></li>
+          <li class="slide"><img src="img/furniture2.png" alt="furniture"></li>
+          <li class="slide"><img src="img/furniture3.png" alt="furniture"></li>
+        </ul>
+      </div>
+      <div class="controller">
+        <div class="arrows">
+          <span class="arrow-btn left-btn"><span class="ir_pm">이전</span></span>
+          <span class="arrow-btn right-btn"><span class="ir_pm">다음</span></span>
+        </div>
+        <div class="pages">
+          <span class="current-num"></span>
+          <span class="dash">/</span>
+          <span class="total-num"></span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

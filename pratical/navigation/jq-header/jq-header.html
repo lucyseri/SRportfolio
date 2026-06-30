@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jq nav</title>
+  <link rel="stylesheet" href="css/jq-header.css">
+  <script src="../../../js/jquery-3.7.1.min.js"></script>
+  <script src="js/jq-header.js" defer></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="top-goto-menu">
+      <div class="goto-inner">
+        <div class="mode-btn">
+          <span class="mode-txt">쉬운 홈</span>
+          <div class="switch-box">
+            <span class="switch"></span>
+          </div>
+        </div>
+        <ul class="icon-btns">
+          <li class="btn">
+            <a href="#">
+              <span class="ir_pm">알림</span>
+              <span class="icon alarm-icon"></span>
+            </a>
+          </li>
+          <li class="btn">
+            <a href="#">
+              <span class="ir_pm">채팅</span>
+              <span class="icon chat-icon"></span>
+            </a>
+          </li>
+          <li class="btn">
+            <a href="#">
+              <span class="ir_pm">마이페이지</span>
+              <span class="icon user-icon"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="bottom-header">
+      <nav>
+        <ul class="bottom-nav">
+          <li class="menu">
+            <a href="#">
+              <span class="icon home-icon"></span>
+              <span class="menu-txt">홈</span>
+            </a>
+          </li>
+          <li class="menu">
+            <a href="#">
+              <span class="icon account-icon"></span>
+              <span class="menu-txt">계좌</span>
+            </a>
+          </li>
+          <li class="menu">
+            <a href="#">
+              <span class="icon product-icon"></span>
+              <span class="menu-txt">상품</span>
+            </a>
+          </li>
+          <li class="menu">
+            <a href="#">
+              <span class="icon benefit-icon"></span>
+              <span class="menu-txt">혜택</span>
+            </a>
+          </li>
+          <li class="menu category">
+            <a href="#">
+              <span class="icon menu-icon"></span>
+              <span class="menu-txt">메뉴</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="sliding-menu">
+      <div class="btn-box content">
+        <div class="inner">
+          <div class="logout-btn">로그아웃</div>
+          <div class="close-btn">
+            <span class="ir_pm">닫기</span>
+            <span class="close-icon"></span>
+          </div>
+        </div>
+      </div>
+      <div class="search-box content">
+        <div class="inner">
+          <form action="#" method="post">
+            <label for="search">검색어</label>
+            <input type="text" placeholder="검색어를 입력하세요" id="search" name="search">
+            <button disabled></button>
+          </form>
+        </div>
+      </div>
+      <div class="menu content">
+        <div class="inner">
+          <ul class="depth1">
+            <li class="depth1-list">
+              <div class="depth1-txt">
+                <a href="#">계좌조회</a>
+                <span class="arrow-btn">
+                  <span class="ir_pm">더보기</span>
+                  <span class="arrow-icon"></span>
+                </span>
+              </div>
+              <ul class="depth2">
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">전체 계좌 조회</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">통장사본 조회</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">휴먼예금/보험금 찾기</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">해지계좌 조회</a>
+                </li>
+              </ul>
+            </li>
+            <li class="depth1-list">
+              <div class="depth1-txt">
+                <a href="#">계좌관리</a>
+                <span class="arrow-btn">
+                  <span class="ir_pm">더보기</span>
+                  <span class="arrow-icon"></span>
+                </span>
+              </div>
+              <ul class="depth2">
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">조회계좌 등록삭제</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">출금계좌 관리</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">이체 한도 관리</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">자금이체 제한 해지</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">한도제한 계좌 해지</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">즐겨찾는 이체</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">자주사용계좌</a>
+                </li>
+              </ul>
+            </li>
+            <li class="depth1-list">
+              <div class="depth1-txt">
+                <a href="#">계좌비밀번호 관리</a>
+                <span class="arrow-btn">
+                  <span class="ir_pm">더보기</span>
+                  <span class="arrow-icon"></span>
+                </span>
+              </div>
+              <ul class="depth2">
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">비밀번호 변경</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">비밀번호 사전등록</a>
+                </li>
+              </ul>
+            </li>
+            <li class="depth1-list">
+              <div class="depth1-txt">
+                <a href="#">휴대폰계좌번호 서비스</a>
+                <span class="arrow-btn">
+                  <span class="ir_pm">더보기</span>
+                  <span class="arrow-icon"></span>
+                </span>
+              </div>
+              <ul class="depth2">
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">휴대폰 계좌번호</a>
+                </li>
+                <li class="depth2-list">
+                  <a href="#" class="depth2-txt">희망번호 연결계좌 조회</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section>
+        <ul class="loader">
+          <li class="dot" style="--i:1;"></li>
+          <li class="dot" style="--i:2;"></li>
+          <li class="dot" style="--i:3;"></li>
+          <li class="dot" style="--i:4;"></li>
+          <li class="dot" style="--i:5;"></li>
+        </ul>
+      </section>
+      <section>
+        <ul class="loader">
+          <li class="dot" style="--i:1;"></li>
+          <li class="dot" style="--i:2;"></li>
+          <li class="dot" style="--i:3;"></li>
+          <li class="dot" style="--i:4;"></li>
+          <li class="dot" style="--i:5;"></li>
+        </ul>
+      </section>
+      <section>
+        <ul class="loader">
+          <li class="dot" style="--i:1;"></li>
+          <li class="dot" style="--i:2;"></li>
+          <li class="dot" style="--i:3;"></li>
+          <li class="dot" style="--i:4;"></li>
+          <li class="dot" style="--i:5;"></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

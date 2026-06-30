@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import url("../../../../css/reset.css");
+section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* spinner1 */
+.sec1{
+  animation: hue-ani 8s linear infinite;
+  background-color: #fff6f6;
+}
+@keyframes hue-ani{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  0%{
+    filter: hue-rotate(360deg);
+  }
+}
+.sec1 .loader{
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.sec1 .loader span{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(calc(20deg * var(--i)));
+}
+.sec1 .loader span::after{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #f08f8f;
+  animation: load-ani 2s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes load-ani{
+  0%{
+    transform: scale(1);
+  }
+  80%, 100%{
+    transform: scale(0);
+  }
+}
+/* spinner2 */
+.sec2 svg{
+  position: relative;
+  width: 130px;
+  height: 130px;
+  animation: rotate-ani 2s linear infinite;
+}
+@keyframes rotate-ani{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.sec2 svg circle{
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #fc5f5f;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  stroke-dashoffset: 380;
+  stroke-dasharray: 380;
+  animation: circle-ani 4s linear infinite;
+  transform: translate(5px, 5px);
+}
+@keyframes circle-ani{
+  0%, 100%{
+    stroke-dashoffset: 380;
+  }
+  50%{
+    stroke-dashoffset: 0;
+  }
+  50.1%{
+    stroke-dashoffset: 760;
+  }
+}
+/* spinner3 */
+.sec3{
+  background-color: #9dd9ff;
+}
+.sec3 .plane-loader{
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.sec3 .plane-loader span{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(calc(18deg * var(--i)));
+}
+.sec3 .plane-loader span::before{
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: scale(0);
+  animation: dot-ani 2s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes dot-ani{
+  0%{
+    transform: scale(0);
+  }
+  10%{
+    transform: scale(1.1);
+  }
+  80%, 100%{
+    transform: scale(0);
+  }
+}
+.sec3 .plane-loader .plane{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: plane-ani 2s linear infinite;
+  animation-delay: -1s;
+}
+@keyframes plane-ani{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.sec3 .plane-loader .plane::before{
+  content: "\f072";
+  display: block;
+  position: absolute;
+  top: 78px;
+  left: 78px;
+  font-size: 56px;
+  font-family: 'Font Awesome 6 Free';
+  color: #fff;
+  transform: rotate(135deg);
+}
+/* spinner4 */
+.sec4{
+  background-color: #fffef6;
+}
+.sec4 .border-loader{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec4 .border-loader span{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #fc5f5f;
+  animation: border-ani 5s linear infinite;
+}
+.sec4 .border-loader span:nth-child(1){
+  border-radius: 59% 41% 63% 37% / 49% 45% 55% 51%;
+}
+.sec4 .border-loader span:nth-child(2){
+  border-radius: 65% 35% 65% 35% / 51% 34% 66% 49%;
+  animation-direction: reverse;
+}
+.sec4 .border-loader span:nth-child(3){
+  animation-duration: 3s;
+  border-radius: 34% 66% 49% 51% / 25% 53% 47% 75%;
+}
+@keyframes border-ani{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.sec4 .border-loader h2{
+  font-size: 18px;
+  color: #333;
+}

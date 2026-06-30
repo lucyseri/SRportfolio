@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url("../../../../css/reset.css");
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
+section{
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+section .container{
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+section .container ul.gallery{
+  width: 4216px;
+  height: inherit;
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section .container ul.gallery li.slide{
+  flex: 0 1 1024px;
+}
+section .container ul.gallery li.slide img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section .controller{
+  width: 160px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #2b2b2b31;
+  position: relative;
+  margin: 20px auto;
+}
+section .controller .arrows{
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+section .controller .arrows .arrow-btn{
+  display: block;
+  flex: 0 0 20px;
+  height: 20px;
+  background-image: url("../img/navigate_before.svg");
+}
+section .controller .arrows .right-btn{
+  transform: scaleX(-1);
+}
+section .controller .pages{
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+section .controller .pages span{
+  display: block;
+  flex: 0 0 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}

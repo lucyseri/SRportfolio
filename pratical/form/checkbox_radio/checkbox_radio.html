@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkbox</title>
+  <!-- style -->
+  <link rel="stylesheet" href="css/checkbox_radio.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../../../plugin/fontawesome/css/brands.css">
+  <link rel="stylesheet" href="../../../plugin/fontawesome/css/solid.css">
+  <link rel="stylesheet" href="../../../plugin/fontawesome/css/fontawesome.css">
+</head>
+<body>
+  <div id="wrap">
+    <section class="checkbox-sec">
+      <div class="sec-inner">
+        <form action="#" method="post">
+          <legend>Terms and Conditions</legend>
+          <div class="row">
+            <p>You must agree to the terms of service in order to use this website.</p>
+            <label for="agree1">
+              <input type="checkbox" id="agree1" name="agree">
+              <span></span>
+            </label>
+          </div>
+          <div class="row">
+            <p>I consent to the collection and use of my personal information as above</p>
+            <label for="agree2">
+              <input type="checkbox" id="agree2" name="agree">
+              <span></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="radio-sec">
+      <div class="sec-inner">
+        <div class="input-box">
+          <input type="radio" id="mypage" name="radio" checked>
+          <div class="label-box">
+            <i class="fa-solid fa-user"></i>
+            <label for="mypage">My Page</label>
+          </div>
+        </div>
+        <div class="input-box">
+          <input type="radio" id="notice" name="radio">
+          <div class="label-box">
+            <i class="fa-solid fa-bell"></i>
+            <label for="notice">Notice</label>
+          </div>
+        </div>
+        <div class="input-box">
+          <input type="radio" id="home" name="radio">
+          <div class="label-box">
+            <i class="fa-solid fa-house"></i>
+            <label for="home">Home</label>
+          </div>
+        </div>
+        <div class="input-box">
+          <input type="radio" id="search" name="radio">
+          <div class="label-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <label for="search">Search</label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

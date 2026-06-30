@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>join</title>
+  <!-- style -->
+  <link rel="stylesheet" href="css/join.css">
+  <!-- js -->
+  <script src="js/js_join.js" defer></script>
+</head>
+<body>
+  <div id="wrap">
+    <section>
+      <div class="inner">
+        <div class="content">
+          <div class="sign-in">
+            Already a Member?&nbsp;
+            <a href="#">Sign In</a>
+          </div>
+          <div class="title">
+            <h2>Sign Up</h2>
+            <div class="steps">
+              <div class="step">
+                <span class="num">1</span>
+                <span class="name">Basic Details</span>
+              </div>
+              <span class="dash"></span>
+              <div class="step">
+                <span class="num">2</span>
+                <span class="name">ID & PW</span>
+              </div>
+              <span class="dash"></span>
+              <div class="step">
+                <span class="num">3</span>
+                <span class="name">setting</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-con">
+            <h3>Basic Deatails</h3>
+            <form action="#" method="post">
+              <div class="input-box">
+                <label for="user-name">Full Name</label>
+                <input type="text" id="user-name" placeholder="Enter your Full Name" required>
+              </div>
+              <div class="input-box">
+                <label for="user-profile" class="file-label">
+                  <span class="profile-img"></span>
+                  <span class="profile-txt">Add Photo</span>
+                </label>
+                <input type="file" id="user-profile" required>
+              </div>
+              <div class="input-box width-100 phone">
+                <label for="user-phone">Phone Number<span class="warning">(Only Numbers)</span></label>
+                <input type="text" id="user-phone" placeholder="Enter your Phone Number without Dash" maxlength="11" required/>
+              </div>
+              <div class="input-box select-box">
+                <label for="user-occupation">Occupation</label>
+                <select name="user-occupation" id="user-occupation" required>
+                  <option value="-select-">-select-</option>
+                  <option value="student">Student</option>
+                  <option value="designer">Designer</option>
+                  <option value="programmer">Programmer</option>
+                </select>
+              </div>
+              <div class="input-box date-box">
+                <label for="user-birthday">Date of Birth</label>
+                <input type="date" id="user-birthday" required>
+              </div>
+              <div class="input-box select-box">
+                <label for="user-region">Region</label>
+                <select name="user-region" id="user-region" required>
+                  <option value="-select-">-select-</option>
+                  <option value="asia">Asia</option>
+                  <option value="america">America</option>
+                  <option value="europe">Europe</option>
+                </select>
+              </div>
+              <fieldset class="input-box">
+                <legend class="laebl">Gender</legend>
+                <div class="input-inner">
+                  <input type="radio" id="user-male" name="user-gender" required>
+                  <label for="user-male" class="gender-label">Male</label>
+                </div>
+                <div class="input-inner">
+                  <input type="radio" id="user-female" name="user-gender" required>
+                  <label for="user-female" class="gender-label">Female</label>
+                </div>
+                <div class="input-inner">
+                  <input type="radio" id="user-not" name="user-gender" required checked>
+                  <label for="user-not" class="gender-label">Not Check</label>
+                </div>
+              </fieldset>
+              <div class="input-box width-100">
+                <label for="bio-description">Description for your Bio</label>
+                <textarea name="bio-description" id="bio-description" placeholder="Within 200 Characters" maxlength="200" required></textarea>
+              </div>
+              <button>Continue</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

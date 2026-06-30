@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url("../../../../css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  --point-font: "Raleway", sans-serif;
+  --background-color: #1b1a1a;
+  --txt-color: #fafafa;;
+  --border-color: #e7e7e7;
+  --primari-color: #c80c0c;
+  --gray-color: #c6c6c6;
+  --point-gradation: linear-gradient(225deg, #ff8e44, #f91362, #35126a);
+}
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
+#wrap{
+  width: 100%;
+  height: auto;
+}
+header{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+header nav{
+  flex: 0 1 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* logo */
+.logo{
+  flex: 0 0 160px;
+}
+.logo a{
+  display: block;
+  width: 100%;
+}
+.logo a h1 img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* gnb */
+.gnb .depth1-container{
+  display: flex;
+}
+.gnb .depth1-container .depth1-list{
+  text-align: center;
+}
+.gnb .depth1-container .depth1-list a{
+  font-family: var(--point-font);
+  color: var(--txt-color);
+}
+.gnb .depth1-container .depth1-list .depth1-txt{
+  padding: 0 24px;
+  line-height: 80px;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  letter-spacing: 1.6px;
+}
+.gnb .depth1-container .depth1-list:hover .depth1-txt::after{
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--point-gradation);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gnb .depth1-container .depth1-list .depth2-container{
+  background-color: var(--background-color);
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  transition: all 0.3s ease-in-out;
+  top: -900px;
+  visibility: hidden;
+  z-index: -1;
+  padding: 16px 0;
+}
+.gnb .depth1-container .depth1-list .depth2-container::after{
+  content: "";
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  border-bottom: 1px solid  var(--border-color);
+}
+.gnb .depth1-container .depth1-list:hover .depth2-container{
+  top: 80px;
+  visibility: visible;
+}
+.gnb .depth1-container .depth1-list .depth2-container .depth2-list .dpeth2-txt{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+.gnb .depth1-container .depth1-list .depth2-container .depth2-list:hover .dpeth2-txt::before{
+  content: "";
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+  background: var(--point-gradation);
+  position: absolute;
+  z-index: -1;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gnb .depth1-container .depth1-list .depth2-container .depth2-list .depth3-container .depth3-list .depth3-txt{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+}
+/* goto */
+.goto{
+  flex: 0 1 160px;
+}
+.goto .goto-inner{
+  display: flex;
+  gap: 16px;
+  justify-content: right;
+}
+.goto .goto-inner li{
+  flex: 0 0 24px;
+  height: 24px;
+}
+.goto .goto-inner li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.goto .goto-inner li a .goto-icon{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+}
+.goto .goto-inner li a .user-icon{
+  background-position: 0px 0px;
+}
+.goto .goto-inner li a .cart-icon{
+  background-position: -24px 0px;
+}
+.goto .goto-inner li a .user-icon:hover{
+  background-position: 0px -24px;
+}
+.goto .goto-inner li a .cart-icon:hover{
+  background-position: -24px -24px;
+}
+/* container */
+.container{
+  display: flex;
+  justify-content: center;
+}
+.container .inner{
+  flex: 0 1 1200px;
+}
+.container .inner section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--background-color);
+}
+.container section .txt-box{
+  flex: 0 1 50%;
+  font-family: var(--point-font);
+  text-align: center;
+}
+.container section .img-box{
+  flex: 0 1 50%;
+}
+.container section .img-box img{
+  display: block;
+  width: 100%;
+  height: auto;
+}

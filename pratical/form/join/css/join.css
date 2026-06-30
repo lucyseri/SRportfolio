@@ -1,0 +1,278 @@
+@charset "utf-8";
+@import url("../../../../css/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+  --primary-color: #F6A26A;
+  --background-color: #FDFDFD;
+  --text-color: #1B1B1B;
+  --gray1-color: #F2F2F2;
+  --gray2-color: #D9D9D9;
+  --gray3-color: #9B9B9B;
+  --gray4-color: #505050;
+}
+*{
+  font-family: "Ubuntu", sans-serif;
+}
+/* layout */
+#wrap{
+  width: 100%;
+  background-color: var(--primary-color);
+}
+section{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .inner{
+  flex: 0 1 1024px;
+  padding: 24px 40px;
+}
+section .inner .content{
+  background-color: var(--background-color);
+  border-radius: 30px;
+  padding: 20px 0;
+  box-shadow: 0 0 10px #7777774e;
+}
+/* content  - signIn*/
+.sign-in{
+  text-align: right;
+  color: var(--text-color);
+  margin: 0 20px;
+}
+.sign-in a{
+  color: var(--primary-color);
+}
+/* content  - title*/
+.title{
+  margin-bottom: 8px;
+}
+.title h2{
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+.title .steps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title .steps .step{
+  flex: 0 0 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title .steps .step .num{
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--gray1-color);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--gray3-color);
+}
+.title .steps .step:first-child .num{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+.title .steps .step .name{
+  display: block;
+  padding: 4px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray4-color);
+}
+.title .steps .dash{
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: var(--gray1-color);
+}
+/* form */
+.form-con{
+  padding: 32px 80px;
+}
+.form-con h3{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.form-con form{
+  display: flex;
+  justify-content: center;
+  gap: 24px 20px;
+  flex-wrap: wrap;
+}
+.form-con form .input-box:first-child{
+  margin-top: 16px;
+}
+.form-con form .input-box:not(.width-100){
+  flex: 0 1 calc(50% - 10px);
+}
+.form-con form .input-box.width-100{
+  flex: 0 1 100%;
+}
+.form-con form .input-box label, .form-con form fieldset legend{
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form-con form .input-box input:not([name="user-gender"]){
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: var(--gray1-color);
+  border-radius: 50px;
+  padding: 8px 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+.form-con form .input-box input::placeholder{
+  line-height: 20px;
+  color: var(--gray4-color);
+  font-size: 14px;
+}
+.form-con form .input-box label.file-label{
+  width: 96px;
+  text-align: center;
+  cursor: pointer;
+}
+.form-con form .input-box label.file-label .profile-img{
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: url("../img/user.svg") no-repeat center / 24px;
+  background-color: var(--primary-color);
+  margin: 0 auto 4px;
+}
+.form-con form .input-box label.file-label .profile-txt{
+  color: var(--text-color);
+}
+.form-con form .input-box input[type = "file"]{
+  display: none;
+}
+.form-con form .phone label .warning{
+  font-size: 12px;
+  color: #ff6536;
+  margin-left: 4px;
+}
+.form-con form .phone input:invalid{
+  border: 1px solid #ff6536;
+}
+.form-con form .input-box select{
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  padding: 8px 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  appearance: none;
+  background-image: url("../img/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: auto;
+  background-color: var(--gray1-color);
+}
+.form-con form .input-box select.arrow-up{
+  background-image: url("../img/chevron-up.svg");
+  background-color: var(--gray1-color);
+}
+.form-con form .date-box input[type = "date"]{
+  width: 100%;
+  height: 40px;
+  position: relative;
+  padding: 7px 16px;
+  background: url("../img/calendar.svg") no-repeat right 12px center / 20px;
+  background-color: var(--gray1-color);
+}
+.form-con form .date-box input[type = "date"]::before{
+  content: "YYYY/MM/DD";
+  color: var(--gray4-color);
+  line-height: 40px;
+  font-size: 12px;
+  width: calc(100% - 48px);
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  background-color: var(--gray1-color);
+}
+.form-con form .date-box input[type = "date"]:valid::before{
+  display: none;
+}
+.form-con form .date-box input[type = "date"]::-webkit-calendar-picker-indicator{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+.form-con form fieldset{
+  border: none;
+  display: flex;
+  gap: 0 8px;
+  margin: 0;
+}
+.form-con form fieldset .input-inner{
+  display: flex;
+}
+.form-con form fieldset .input-inner input[name="user-gender"]{
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--primary-color);
+  appearance: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.form-con form fieldset .input-inner input[name="user-gender"]:checked{
+  background: url("../img/check.svg") no-repeat center / cover;
+  background-color: var(--primary-color);
+}
+.form-con form fieldset .input-inner label.gender-label{
+  padding: 0 8px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  cursor: pointer;
+}
+.form-con form .input-box textarea{
+  display: block;
+  width: 100%;
+  min-height: 154px;
+  border: none;
+  outline: none;
+  background-color: var(--gray1-color);
+  border-radius: 20px;
+  padding: 8px 16px;
+  resize: none;
+  color: var(--text-color);
+}
+.form-con form .input-box textarea::placeholder{
+  line-height: 20px;
+  color: var(--gray4-color);
+  font-size: 14px;
+}
+.form-con form button{
+  padding: 12px 16px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--background-color);
+}

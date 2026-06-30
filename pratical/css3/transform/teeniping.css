@@ -1,0 +1,82 @@
+/* reset */
+@font-face {
+  font-family: 'Cafe24ClassicType';
+  src: url('font/Cafe24Classictype-v1.1.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cafe24ClassicType';
+  color: #4E515F;
+}
+ul, li{
+  list-style: none;
+}
+/* container */
+main{
+  min-height: 100vh;
+  padding: 60px 0;
+  background: url('img/back.png') no-repeat center / cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section h1{
+  max-width: 400px;
+  margin: 0 auto 40px;
+}
+main section h1 img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main section .sec-con{
+  max-width: 660px;
+  margin: 0 auto;
+}
+main section .sec-con ul{
+  display: flex;
+  justify-content: center;
+  gap: 12px 8px;
+  flex-wrap: wrap;
+}
+main section .sec-con ul li{
+  flex: 0 0 100px;
+}
+main section .sec-con ul li .img-box{
+  width: 100px;
+  height: 110px;
+  overflow: hidden;
+  background-color: #F6F1F0;
+  border: 4px solid #fff;
+  transform: skewX(-15deg);
+  transition: background-color 0.5s, scale 0.2s;
+  border-radius: 8px;
+}
+main section .sec-con ul li:hover{
+  z-index: 2;
+}
+main section .sec-con ul li:hover .img-box{
+  background-color: #fdc8b0;
+  transform: skewX(-15deg) scale(1.4);
+}
+main section .sec-con ul li .img-box .img{
+  width: 100%;
+  height: 100%;
+  transform: skewX(15deg);
+  background-image: var(--i);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+main section .sec-con ul li span.name{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px 0;
+  letter-spacing: 1px;
+}

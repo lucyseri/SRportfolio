@@ -1,0 +1,75 @@
+@charset "utf-8";
+@import url("../../../../css/reset.css");
+#wrap section{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+#wrap section .container{
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* gallery */
+#wrap section .container .gallery{
+  width: 100%;
+  height: inherit;
+}
+#wrap section .container .gallery .slide{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap section .container .gallery .slide img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* arrow */
+#wrap section .arrows{
+  width: 1440px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap section .arrows .arrow-btn{
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #222;
+  border-right: 3px solid #222;
+  cursor: pointer;
+}
+#wrap section .arrows .right{
+  float: right;
+  transform: rotate(45deg);
+}
+#wrap section .arrows .left{
+  float: left;
+  transform: rotate(-135deg);
+}
+/* pager */
+#wrap section .pager{
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+#wrap section .pager .pager-btn{
+  width: 50px;
+  height: 8px;
+  background-color: #999;
+  float: left;
+  cursor: pointer;
+}
+#wrap section .pager .pager-btn:not(:last-child){
+  margin-right: 5px;
+}
+#wrap section .pager li.active{
+  background-color: #550a0a;
+}

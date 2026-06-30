@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #2B2A27;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}

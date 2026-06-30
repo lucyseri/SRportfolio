@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url("../../../../css/reset.css");
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
+#wrap section{
+  width: 100%;
+  position: relative;
+}
+#wrap section ul.gallery{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap section ul.gallery li.slide{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+#wrap section ul.gallery li.active{
+  opacity: 1;
+  z-index: 0;
+}
+#wrap section ul.gallery li.slide img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#wrap section .controler{
+  width: 100%;
+  background-color: #0000003f;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap section .controler .pages{
+  line-height: 20px;
+  font-size: 16px;
+  color: #fafafa;
+}
+#wrap section .controler .pages span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: inherit;
+  text-align: center;
+  font-size: inherit;
+  color: inherit;
+}
+#wrap section .controler .pages span.current-num{
+  margin-right: 4px;
+}
+#wrap section .controler .pages span.total-num{
+  margin-left: 4px;
+}
+#wrap section .controler .btns span.btn{
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#wrap section .controler .btns span.btn.prev{
+  margin-right: 12px;
+  background-image: url("../img/skip-back.svg");
+}
+#wrap section .controler .btns span.btn.puase{
+  background-image: url("../img/pause.svg");
+}
+#wrap section .controler .btns span.btn.next{
+  margin-left: 12px;
+  transform: scaleX(-1);
+  background-image: url("../img/skip-back.svg");
+}
