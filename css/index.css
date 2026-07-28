@@ -247,17 +247,18 @@ section.about .sec-con .contact ul.table li.mail span.tdata {
   flex: 0 1 calc((100% - 76px) / 3);
   letter-spacing: 0.125px;
 }
-section.about .sec-con .contact ul.table li.mail span.copy-btn {
+section.about .sec-con .contact ul.table li.mail button.copy-btn {
   flex: 0 1 calc((100% - 190px) / 6);
   padding: 6px 10px;
   border-radius: 20px;
+  border: 0;
   background-color: #F6DF66;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   cursor: pointer;
 }
-section.about .sec-con .contact ul.table li.mail span.copy-btn:hover {
+section.about .sec-con .contact ul.table li.mail button.copy-btn:hover {
   font-weight: 500;
 }
 section.about .sec-con .certificate {
@@ -402,6 +403,7 @@ ul.slick-dots li button {
   text-align: center;
   line-height: 18px;
   border-radius: 50%;
+  cursor: pointer;
 }
 ul.slick-dots li.slick-active button {
   color: #FEFEFD;
@@ -567,16 +569,17 @@ section.component .sec-title ul.menu {
   display: flex;
   gap: 8px;
 }
-section.component .sec-title ul.menu li {
+section.component .sec-title ul.menu li button {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   border-radius: 20px;
   border: 1px solid #A6A39B;
   color: #A6A39B;
   padding: 4px 8px;
+  background-color: transparent;
   cursor: pointer;
 }
-section.component .sec-title ul.menu li.active {
+section.component .sec-title ul.menu li button.active {
   border: 1px solid #2B2A27;
   color: #2B2A27;
 }
@@ -733,7 +736,7 @@ footer span.mail span.icon {
   vertical-align: middle;
   margin-right: 8px;
 }
-footer span.mail span.click-ballon {
+footer span.mail button.click-ballon {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -747,8 +750,14 @@ footer span.mail span.click-ballon {
   color: #5F5D57;
   animation: blinkAni 1s ease-in-out;
   animation-iteration-count: infinite;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
 }
-footer span.mail span.click-ballon::before {
+footer span.mail button.click-ballon:hover {
+  animation-play-state: paused;
+}
+footer span.mail button.click-ballon::before {
   content: "";
   display: block;
   width: 0px;

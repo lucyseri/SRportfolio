@@ -1,6 +1,6 @@
 //about
 const email = 'serirucy@gmail.com';
-const aboutCopyBtn = document.querySelector('span.copy-btn');
+const aboutCopyBtn = document.querySelector('button.copy-btn');
 async function copyFun(txt){
   try{
     await window.navigator.clipboard.writeText(email);
@@ -69,7 +69,7 @@ $('.discord-li .fade-gallery').slick({
 });
 //component
 const compoSecMenu = document.querySelector('section.component .sec-title ul.menu');
-const compoSecMenuLi = document.querySelectorAll('section.component .sec-title ul.menu li');
+const compoSecMenuLi = document.querySelectorAll('section.component .sec-title ul.menu li button');
 const compoTitleH2 = document.querySelector('section.component .sec-con .compo-title h2');
 const compoTitleDesc = document.querySelector('section.component .sec-con .compo-title p');
 const compoDescArr = [
@@ -189,7 +189,7 @@ window.addEventListener('scroll', function(e){
 });
 //footer
 const footerMail = document.querySelector('footer span.mail');
-const footerBallon = document.querySelector('footer span.click-ballon');
+const footerBallon = document.querySelector('footer button.click-ballon');
 footerMail.addEventListener('click', function(){
   copyFun(footerBallon);
 });

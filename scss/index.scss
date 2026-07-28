@@ -226,10 +226,11 @@ section.about{
             flex: 0 1 calc((100% - 38px * 2) / 3);
             letter-spacing: 0.125px;
           }
-          span.copy-btn{
+          button.copy-btn{
             flex: 0 1 calc((100% - 38px * 5) / 6);
             padding: 6px 10px;
             border-radius: 20px;
+            border: 0;
             background-color: $main-color;
             text-align: center;
             font-family: $title-font;
@@ -388,6 +389,7 @@ ul.slick-dots{
       text-align: center;
       line-height: 18px;
       border-radius: 50%;
+      cursor: pointer;
     }
     &.slick-active{
       button{
@@ -554,16 +556,19 @@ section.component{
       display: flex;
       gap: 8px;
       li{
-        font-family: $title-font;
-        font-size: 16px;
-        border-radius: 20px;
-        border: 1px solid $txt2-color;
-        color: $txt2-color;
-        padding: 4px 8px;
-        cursor: pointer;
-        &.active{
-          border:  1px solid $txt0-color;
-          color: $txt0-color;
+        button{
+          font-family: $title-font;
+          font-size: 16px;
+          border-radius: 20px;
+          border: 1px solid $txt2-color;
+          color: $txt2-color;
+          padding: 4px 8px;
+          background-color: transparent;
+          cursor: pointer;
+          &.active{
+            border:  1px solid $txt0-color;
+            color: $txt0-color;
+          }
         }
       }
     }
@@ -720,7 +725,7 @@ footer{
       vertical-align: middle;
       margin-right: 8px;
     }
-    span.click-ballon{
+    button.click-ballon{
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -734,6 +739,12 @@ footer{
       color: $txt1-color;
       animation: blinkAni 1s ease-in-out;
       animation-iteration-count: infinite;
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+      &:hover{
+        animation-play-state: paused;
+      }
       &::before{
         content: '';
         display: block;
