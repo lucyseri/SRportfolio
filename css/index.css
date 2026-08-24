@@ -788,6 +788,9 @@ footer span.mail button.click-ballon::before {
 .featherlight .featherlight-content {
   overflow: visible !important;
 }
+.featherlight .featherlight-content iframe {
+  overflow: scroll !important;
+}
 
 .my-custom-margin .featherlight-content {
   margin-left: auto !important;

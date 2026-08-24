@@ -101,10 +101,10 @@ const compoArr = [
   new CompoObj ('Form', 'Text', '검색창과 단답식 질의응답에 쓰일 수 있는 text 타입 input', 'pratical/form/text/text.html', 'img/compo-img-5.png', '768'),
   new CompoObj ('Form', 'Num', '커스텀 버튼을 제작해 조작이 가능하도록 만든 num 타입 input', 'pratical/form/num/number.html', 'img/compo-img-6.png', '1024'),
   new CompoObj ('Form', 'Join Form', 'date, file, radio 등 다양한 타입의 input과 더불어 select, texture, 정규식과 replace 함수 등을 활용해 만든 회원가입 양식', 'pratical/form/join/join.html', 'img/compo-img-7.png', '1280'),
-  new CompoObj ('Banner', 'Javascript Slider', '화살표 버튼과 슬라이드 닷을 포함한 무한 슬라이드 되는 형식의 슬라이더', 'pratical/mainbanner/js-slider/js_slideGallery.html', 'img/compo-img-8.png', '1500'),
-  new CompoObj ('Banner', 'jQuery Slider', '화살표 버튼과 함께, 현재 슬라이더와 총 슬라이더의 수가 표시되는 슬라이더', 'pratical/mainbanner/jq-slider/jq_slideGallery.html', 'img/compo-img-9.png', '1500'),
-  new CompoObj ('Banner', 'Javascript Fade Gallery', '화살표 버튼과 컨트롤러로 재생을 조작할 수 있는 페이드 갤러리', 'pratical/mainbanner/js-fadeGallery/js_fadeGallery.html', 'img/compo-img-10.png', '1500'),
-  new CompoObj ('Banner', 'jQuery Fade Gallery', '갤러리의 이미지 닷과 화살표 버튼을 포함한 페이드 갤러리', 'pratical/mainbanner/jq-fadeGallery/jq_fadeGallery.html', 'img/compo-img-11.png', '1500'),
+  new CompoObj ('Banner', 'Javascript Slider', '화살표 버튼과 슬라이드 닷을 포함한 무한 슬라이드 되는 형식의 슬라이더', 'pratical/mainbanner/js-slider/js_slideGallery.html', 'img/compo-img-8.png', '1400'),
+  new CompoObj ('Banner', 'jQuery Slider', '화살표 버튼과 함께, 현재 슬라이더와 총 슬라이더의 수가 표시되는 슬라이더', 'pratical/mainbanner/jq-slider/jq_slideGallery.html', 'img/compo-img-9.png', '1400'),
+  new CompoObj ('Banner', 'Javascript Fade Gallery', '화살표 버튼과 컨트롤러로 재생을 조작할 수 있는 페이드 갤러리', 'pratical/mainbanner/js-fadeGallery/js_fadeGallery.html', 'img/compo-img-10.png', '1400'),
+  new CompoObj ('Banner', 'jQuery Fade Gallery', '갤러리의 이미지 닷과 화살표 버튼을 포함한 페이드 갤러리', 'pratical/mainbanner/jq-fadeGallery/jq_fadeGallery.html', 'img/compo-img-11.png', '1400'),
   new CompoObj ('Navigation', 'Dash Board', '간추린 메뉴와 펼친 메뉴로 변경이 가능하고 다크 모드와 라이트 모드를 선택할 수 있는 좌측 고정 네비게이션', 'pratical/navigation/dashboard/dashboard.html', 'img/compo-img-12.png', '1280'),
   new CompoObj ('Navigation', 'CSS Web', 'css만을 활용한 하위 메뉴가 위에서 아래로 슬라이드 되는 해더 네비게시연', 'pratical/navigation/css-header/css-header.html', 'img/compo-img-13.png', '1280'),
   new CompoObj ('Navigation', 'JS Responsive Web', '데스크탑에서는 메뉴에 마우시 오버시 하위 메뉴가 노출되고, 768px 이하 테블릿에서는 메뉴 아이콘 클릭시 우측에서 슬라이드되며 나타나는 반응형 해더', 'pratical/navigation/js-header/js-header.html', 'img/compo-img-14.png', '1280'),
@@ -147,9 +147,7 @@ const webappSecTitle = document.querySelector('section.webapp-pro .sec-title');
 const componentSec = document.querySelector('section.component');
 const componentSecTitle = document.querySelector('section.component .compo-title');
 const footerH2 = document.querySelector('footer h2');
-console.log(skillsSec.offsetTop)
 window.addEventListener('scroll', function(e){
-  // console.log(this.scrollY);
   const coverHeight = document.querySelector('section.cover').offsetHeight;
   if(this.scrollY>=coverHeight){
     header.classList.add('active');

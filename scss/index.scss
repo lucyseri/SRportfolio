@@ -777,6 +777,9 @@ footer{
 }
 .featherlight .featherlight-content{
   overflow: visible !important;
+  iframe{
+    overflow: scroll !important;
+  }
 }
 .my-custom-margin{
   .featherlight-content{
