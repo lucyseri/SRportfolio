@@ -814,6 +814,9 @@ footer span.mail button.click-ballon::before {
   .sec-title h2 {
     font-size: 56px;
   }
+  .sec-title h2 span {
+    display: block;
+  }
   section.cover {
     padding: 80px 0 0;
   }
@@ -1018,7 +1021,6 @@ footer span.mail button.click-ballon::before {
     font-size: 32px;
   }
   .sec-title h2 span {
-    display: block;
     font-size: 12px;
   }
   .sec-title h3 {

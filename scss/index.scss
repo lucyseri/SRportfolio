@@ -808,6 +808,9 @@ footer{
   // common
   .sec-title h2{
     font-size: 56px;
+    span{
+      display: block;
+    }
   }
   // cover section
   section.cover{
@@ -1057,7 +1060,6 @@ footer{
     h2{
       font-size: 32px;
       span{
-        display: block;
         font-size: 12px;
       }
     }
